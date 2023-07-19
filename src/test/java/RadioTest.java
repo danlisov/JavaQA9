@@ -5,7 +5,7 @@ import ru.netology.javaqa.JaqaQA9.service.Radio;
 public class RadioTest {
 
     @Test
-    public void shouldSetRadioStation(){
+    public void shouldSetRadioStation() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(6);
@@ -17,7 +17,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetMaxRadioStation(){
+    public void shouldSetMaxRadioStation() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(9);
@@ -29,7 +29,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetMinRadioStation(){
+    public void shouldSetMinRadioStation() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(0);
@@ -41,7 +41,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetFirstRadioStation(){
+    public void shouldSetFirstRadioStation() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(1);
@@ -53,7 +53,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetEightRadioStation(){
+    public void shouldSetEightRadioStation() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(8);
@@ -65,7 +65,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetNegativeMinRadioStation(){
+    public void shouldSetNegativeMinRadioStation() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(-1);
@@ -77,7 +77,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetNegativeMaxRadioStation(){
+    public void shouldSetNegativeMaxRadioStation() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(10);
@@ -89,7 +89,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetVolume(){
+    public void shouldSetVolume() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(50);
@@ -101,7 +101,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetMaxVolume(){
+    public void shouldSetMaxVolume() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(100);
@@ -113,7 +113,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetMinVolume(){
+    public void shouldSetMinVolume() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(0);
@@ -125,7 +125,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetFirstVolume(){
+    public void shouldSetFirstVolume() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(1);
@@ -137,7 +137,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetPrevLastVolume(){
+    public void shouldSetPrevLastVolume() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(99);
@@ -149,7 +149,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetNegativeMinVolume(){
+    public void shouldSetNegativeMinVolume() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(-1);
@@ -161,7 +161,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetNegativeMaxVolume(){
+    public void shouldSetNegativeMaxVolume() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(101);
@@ -173,7 +173,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldIncreaseMinRadioStation(){
+    public void shouldIncreaseMinRadioStation() {
         Radio radio = new Radio();
 
         radio.next();
@@ -185,7 +185,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldIncreaseRadioStation(){
+    public void shouldIncreaseRadioStation() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(6);
@@ -199,7 +199,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldIncreaseRadioStationToMax(){
+    public void shouldIncreaseRadioStationToMax() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(8);
@@ -213,7 +213,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldReduceRadioStation(){
+    public void shouldReduceRadioStation() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(6);
@@ -227,7 +227,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldReduceMaxRadioStation(){
+    public void shouldReduceMaxRadioStation() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(9);
@@ -241,7 +241,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldReduceRadioStationToMin(){
+    public void shouldReduceRadioStationToMin() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(1);
@@ -255,7 +255,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldIncreaseMaxRadioStation(){
+    public void shouldIncreaseMaxRadioStation() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(9);
@@ -269,7 +269,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldReduceMinRadioStation(){
+    public void shouldReduceMinRadioStation() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(0);
@@ -283,7 +283,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldIncreaseVolume(){
+    public void shouldIncreaseVolume() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(50);
@@ -297,7 +297,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldReduceVolume(){
+    public void shouldReduceVolume() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(50);
@@ -311,7 +311,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldReduceWhenMaxVolume(){
+    public void shouldReduceWhenMaxVolume() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(100);
@@ -325,7 +325,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldIncreaseWhenMinVolume(){
+    public void shouldIncreaseWhenMinVolume() {
         Radio radio = new Radio();
 
         radio.increaseVolume();
@@ -337,7 +337,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldNegativeReduceVolume(){
+    public void shouldNegativeReduceVolume() {
         Radio radio = new Radio();
 
         radio.reduceVolume();
@@ -349,7 +349,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldIncreaseVolumeMoreThanMax(){
+    public void shouldIncreaseVolumeMoreThanMax() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(100);

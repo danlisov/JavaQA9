@@ -1,17 +1,18 @@
 package ru.netology.javaqa.JaqaQA9.service;
+
 public class Radio {
     private int currentRadioStation;
     private int currentVolume;
 
     public void setCurrentRadioStation(int newCurrentRadioStation) {
-        if (newCurrentRadioStation < 0 || newCurrentRadioStation > 9){
+        if (newCurrentRadioStation < 0 || newCurrentRadioStation > 9) {
             return;
         }
         currentRadioStation = newCurrentRadioStation;
     }
 
-    public void setCurrentVolume(int newCurrentVolume){
-        if (newCurrentVolume < 0 || newCurrentVolume > 100){
+    public void setCurrentVolume(int newCurrentVolume) {
+        if (newCurrentVolume < 0 || newCurrentVolume > 100) {
             return;
         }
         currentVolume = newCurrentVolume;
@@ -25,27 +26,29 @@ public class Radio {
         return currentVolume;
     }
 
-    public void next(){
+    public void next() {
         if (currentRadioStation < 9) {
             currentRadioStation = currentRadioStation + 1;
-        } else{
+        } else {
             currentRadioStation = 0;
         }
     }
-    public void prev(){
+
+    public void prev() {
         if (currentRadioStation > 0) {
             currentRadioStation = currentRadioStation - 1;
-        }else{
+        } else {
             currentRadioStation = 9;
         }
     }
-    public void increaseVolume(){
+
+    public void increaseVolume() {
         if (currentVolume < 100) {
             currentVolume = currentVolume + 1;
         }
     }
 
-    public void reduceVolume(){
+    public void reduceVolume() {
         if (currentVolume > 0) {
             currentVolume = currentVolume - 1;
         }
