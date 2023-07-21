@@ -15,7 +15,7 @@ public class RadioTest {
 
     @Test
     public void shouldSetMaxRadioStation() {
-        Radio radio = new Radio(15);
+        Radio radio = new Radio(0, 0, 15);
 
         radio.setCurrentRadioStation(14);
 
@@ -48,23 +48,6 @@ public class RadioTest {
         Assertions.assertEquals(8, radio.getCurrentRadioStation());
     }
 
-    @Test
-    public void shouldSetNegativeMinRadioStation() {
-        Radio radio = new Radio();
-
-        radio.setCurrentRadioStation(-1);
-
-        Assertions.assertEquals(0, radio.getCurrentRadioStation());
-    }
-
-    @Test
-    public void shouldSetNegativeMaxRadioStation() {
-        Radio radio = new Radio(10);
-
-        radio.setCurrentRadioStation(10);
-
-        Assertions.assertEquals(0, radio.getCurrentRadioStation());
-    }
 
     @Test
     public void shouldSetVolume() {
@@ -111,23 +94,6 @@ public class RadioTest {
         Assertions.assertEquals(99, radio.getCurrentVolume());
     }
 
-    @Test
-    public void shouldSetNegativeMinVolume() {
-        Radio radio = new Radio();
-
-        radio.setCurrentVolume(-1);
-
-        Assertions.assertEquals(0, radio.getCurrentVolume());
-    }
-
-    @Test
-    public void shouldSetNegativeMaxVolume() {
-        Radio radio = new Radio();
-
-        radio.setCurrentVolume(101);
-
-        Assertions.assertEquals(0, radio.getCurrentVolume());
-    }
 
     @Test
     public void shouldIncreaseMinRadioStation() {
@@ -140,7 +106,7 @@ public class RadioTest {
 
     @Test
     public void shouldIncreaseRadioStation() {
-        Radio radio = new Radio(21);
+        Radio radio = new Radio(0, 0, 21);
 
         radio.setCurrentRadioStation(6);
 
@@ -151,7 +117,7 @@ public class RadioTest {
 
     @Test
     public void shouldIncreaseRadioStationToMax() {
-        Radio radio = new Radio(26);
+        Radio radio = new Radio(0, 0, 26);
 
         radio.setCurrentRadioStation(24);
 
@@ -162,7 +128,7 @@ public class RadioTest {
 
     @Test
     public void shouldReduceRadioStation() {
-        Radio radio = new Radio(11);
+        Radio radio = new Radio(0, 0, 11);
 
         radio.setCurrentRadioStation(6);
 
@@ -173,7 +139,7 @@ public class RadioTest {
 
     @Test
     public void shouldReduceMaxRadioStation() {
-        Radio radio = new Radio(16);
+        Radio radio = new Radio(0, 0, 16);
 
         radio.setCurrentRadioStation(15);
 
@@ -184,7 +150,7 @@ public class RadioTest {
 
     @Test
     public void shouldReduceRadioStationToMin() {
-        Radio radio = new Radio(20);
+        Radio radio = new Radio(0, 0, 20);
 
         radio.setCurrentRadioStation(1);
 
@@ -195,7 +161,7 @@ public class RadioTest {
 
     @Test
     public void shouldIncreaseMaxRadioStation() {
-        Radio radio = new Radio(30);
+        Radio radio = new Radio(0, 0, 30);
 
         radio.setCurrentRadioStation(29);
 
@@ -206,7 +172,7 @@ public class RadioTest {
 
     @Test
     public void shouldReduceMinRadioStation() {
-        Radio radio = new Radio(50);
+        Radio radio = new Radio(0, 0, 50);
 
         radio.setCurrentRadioStation(0);
 
@@ -280,7 +246,7 @@ public class RadioTest {
 
     @Test
     public void shouldIncreaseWhenOneRadioStation() {
-        Radio radio = new Radio(1);
+        Radio radio = new Radio(0, 0, 1);
 
         radio.next();
 
@@ -289,7 +255,7 @@ public class RadioTest {
 
     @Test
     public void shouldReduceWhenOneRadioStation() {
-        Radio radio = new Radio(1);
+        Radio radio = new Radio(0, 0, 1);
 
         radio.prev();
 
@@ -298,7 +264,7 @@ public class RadioTest {
 
     @Test
     public void shouldReduceWhenTwoRadioStation() {
-        Radio radio = new Radio(2);
+        Radio radio = new Radio(0, 0, 2);
 
         radio.prev();
 

@@ -1,38 +1,16 @@
 package ru.netology.javaqa.JaqaQA9.service;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class Radio {
     private int currentRadioStation;
     private int currentVolume;
     private int countRadioStation = 10;
-
-    public Radio() {
-    }
-
-    public Radio(int countRadioStation) {
-        this.countRadioStation = countRadioStation;
-    }
-
-    public void setCurrentRadioStation(int newCurrentRadioStation) {
-        if (newCurrentRadioStation < 0 || newCurrentRadioStation > countRadioStation - 1) {
-            return;
-        }
-        currentRadioStation = newCurrentRadioStation;
-    }
-
-    public void setCurrentVolume(int newCurrentVolume) {
-        if (newCurrentVolume < 0 || newCurrentVolume > 100) {
-            return;
-        }
-        currentVolume = newCurrentVolume;
-    }
-
-    public int getCurrentRadioStation() {
-        return currentRadioStation;
-    }
-
-    public int getCurrentVolume() {
-        return currentVolume;
-    }
 
     public void next() {
         if (currentRadioStation < countRadioStation - 1) {
@@ -61,6 +39,4 @@ public class Radio {
             currentVolume = currentVolume - 1;
         }
     }
-
-
 }
