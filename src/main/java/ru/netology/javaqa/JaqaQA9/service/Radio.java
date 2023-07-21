@@ -3,9 +3,17 @@ package ru.netology.javaqa.JaqaQA9.service;
 public class Radio {
     private int currentRadioStation;
     private int currentVolume;
+    private int countRadioStation = 10;
+
+    public Radio() {
+    }
+
+    public Radio(int countRadioStation) {
+        this.countRadioStation = countRadioStation;
+    }
 
     public void setCurrentRadioStation(int newCurrentRadioStation) {
-        if (newCurrentRadioStation < 0 || newCurrentRadioStation > 9) {
+        if (newCurrentRadioStation < 0 || newCurrentRadioStation > countRadioStation - 1) {
             return;
         }
         currentRadioStation = newCurrentRadioStation;
@@ -27,7 +35,7 @@ public class Radio {
     }
 
     public void next() {
-        if (currentRadioStation < 9) {
+        if (currentRadioStation < countRadioStation - 1) {
             currentRadioStation = currentRadioStation + 1;
         } else {
             currentRadioStation = 0;
@@ -38,7 +46,7 @@ public class Radio {
         if (currentRadioStation > 0) {
             currentRadioStation = currentRadioStation - 1;
         } else {
-            currentRadioStation = 9;
+            currentRadioStation = countRadioStation - 1;
         }
     }
 
